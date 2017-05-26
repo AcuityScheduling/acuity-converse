@@ -1,0 +1,11 @@
+user> When is my appointment?
+* check
+
+service> What is your e-mail address?
+* prompt/email
+
+user> [bob@example.com](email/email)
+* provide/email
+
+service> You have [1](number/count) class scheduled: [Lego Party](classes)
+* upcoming/appointments

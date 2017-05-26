@@ -1,0 +1,11 @@
+user> Do I have any upcoming bookings?
+* check
+
+service> What is your e-mail address?
+* prompt/email
+
+user> [cark@example.com](email/email)
+* provide/email
+
+service> You do not have any upcoming appointments scheduled.
+* upcoming/none

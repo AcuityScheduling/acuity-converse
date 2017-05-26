@@ -1,0 +1,29 @@
+user> I'd like to schedule a class.
+* greeting
+
+service> Hi there!  What type of class would you like to book?
+* prompt/type
+
+user> [Lego Party](type)
+* provide/type
+
+service> What time would you like to schedule?
+* prompt/datetime
+
+user> [Today at 6pm](time/datetime)
+* provide/datetime
+
+service> What is your name?
+* prompt/name
+
+user> [Gene](firstName] [Belcher](lastName)
+* provide/name
+
+service> What is your e-mail address?
+* prompt/email
+
+user> [gene@example.org](email/email)
+* provide/email
+
+service> Your [Lego Party](type) [today at 6pm](datetime) is confirmed!
+* confirmation

@@ -1,0 +1,29 @@
+user> Hi
+* greeting
+
+service> Hi there!  What type of appointment would you like to book?
+* prompt/type
+
+user> [Novice Builder](type)
+* provide/type
+
+service> What time would you like your appointment?
+* prompt/datetime
+
+user> [June 5, 3pm](time/datetime)
+* provide/datetime
+
+service> What is your first and last name?
+* prompt/name
+
+user> [Bob](firstName) [Belcher](lastName)
+* provide/name
+
+service> What is your e-mail address?
+* prompt/email
+
+user> [bob@example.com](email/email)
+* provide/email
+
+service> Your [Lego Therapy](type) on [June 5, 3pm](datetime) is confirmed!
+* confirmation

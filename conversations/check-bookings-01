@@ -1,0 +1,11 @@
+user> What time is my class?
+* check
+
+service> What is your e-mail address?
+* prompt/email
+
+user> [bob@example.com](email/email)
+* provide/email
+
+service> You do not have any upcoming classes scheduled.
+* upcoming/none

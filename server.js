@@ -12,7 +12,12 @@ app.post('/', ({body: {event_type, data}, hostname}, res) => {
   console.log(`[${hostname}]: "${event_type}" webhook received from Init.ai`)
 
   if (event_type === 'LogicInvocation') {
-    runLogic(data).then(sendLogicResult(data.payload))
+    runLogic(data)
+      .then(function (data) {
+        console.log("DATA: ", data.payload.messages[0]);
+        return data;
+      })
+      .then(sendLogicResult(data.payload))
       .catch((error) => {console.log('[ERROR]:\n', error)})
   }
 

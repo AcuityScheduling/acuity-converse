@@ -1,7 +1,7 @@
 {
-  "name": "sample-logic-server",
+  "name": "acuity-converse",
   "version": "1.0.0",
-  "description": "A sample webhook server to process logic invocations for Init.ai projects.",
+  "description": "A sample conversational booking application built with Acuity Scheduling and Init.ai based on their [sample-logic-server](https://github.com/init-ai/sample-logic-server).",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

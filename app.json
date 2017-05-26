@@ -1,0 +1,6 @@
+{
+  "name": "sample-logic-server",
+  "description": "A sample webhok server to process logic invocations for Init.ai projects.",
+  "repository": "https://github.com/init-ai/sample-logic-server",
+  "logo": "https://node-js-sample.herokuapp.com/node.png"
+}

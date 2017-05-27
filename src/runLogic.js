@@ -138,8 +138,8 @@ module.exports = function runLogic(eventData) {
         // Check for sender name set from Facebook,
         // or use the name provided by the user:
         const sender =  client.getMessagePart().sender;
-        const firstName = sender.first_name || client.getFirstEntityWithRole(client.getMessagePart(), 'firstName');
-        const lastName = sender.last_name || client.getFirstEntityWithRole(client.getMessagePart(), 'lastName');
+        const firstName = client.getFirstEntityWithRole(client.getMessagePart(), 'firstName') || sender.first_name;
+        const lastName = client.getFirstEntityWithRole(client.getMessagePart(), 'lastName') || sender.last_name;
         if (firstName) {
           client.updateConversationState({ firstName: firstName });
         }

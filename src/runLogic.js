@@ -177,7 +177,6 @@ module.exports = function runLogic(eventData) {
           // Clear out conversation state.  This will reset our satisefied
           // conditions  and the user can schedule again.
           client.updateConversationState({
-            type: null,
             appointmentTypeID: null,
             datetime: null
           });

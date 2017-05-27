@@ -26,10 +26,6 @@ module.exports = function runLogic(eventData) {
 
     const getAppointmentType = client.createStep({
       /**
-       * Satisfy this step once we have an appointment type:
-       */
-      satisfied() { return Boolean(client.getConversationState().appointmentTypeID) },
-      /**
        * Get the appointment type from the client response.
        */
       extractInfo() {
@@ -41,6 +37,10 @@ module.exports = function runLogic(eventData) {
           });
         }
       },
+      /**
+       * Satisfy this step once we have an appointment type:
+       */
+      satisfied() { return Boolean(client.getConversationState().appointmentTypeID) },
       /**
        * Prompt for an appointment type if we don't have one stored.
        */

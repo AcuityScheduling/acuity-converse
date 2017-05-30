@@ -174,7 +174,7 @@ module.exports = function runLogic(eventData) {
         };
         acuity.request('/appointments', options, function (err, res, appointment) {
 
-          // Clear out conversation state.  This will reset our satisefied
+          // Clear out conversation state.  This will reset our satisfied
           // conditions  and the user can schedule again.
           client.updateConversationState({
             appointmentTypeID: null,
